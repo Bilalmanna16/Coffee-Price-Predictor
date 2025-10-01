@@ -11,7 +11,7 @@ import os
 
 # --- File Paths ---
 # Make sure your training data CSV is in the 'data/' folder
-DATA_PATH = 'data/your_coffee_data.csv'  # <--- IMPORTANT: CHANGE TO YOUR CSV FILENAME
+DATA_PATH = 'data/NewCoffeeData.csv'  # <--- IMPORTANT: CHANGE TO YOUR CSV FILENAME
 MODEL_PATH = 'models/coffee_price_predictor_pipeline.pkl'
 
 # --- Main Training Function ---
