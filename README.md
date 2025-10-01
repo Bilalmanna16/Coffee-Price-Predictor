@@ -25,27 +25,27 @@ A complete machine learning project that predicts coffee prices based on product
 
 ## 📂 Project Structure
 
-The project is structured to separate experimentation, model training, and the final application, which is a standard practice for maintainable data science projects.
+The project is structured to separate experimentation, model training, and the final application, which is a standard practice for maintainable data science projects. <br>
 
-├── app/
-│   └── app.py              # The Streamlit web application script.
-│
-├── data/
-│   └── coffee_data.csv     # The raw dataset used for training (add your CSV here).
-│
-├── models/
-│   └── coffee_price_predictor_pipeline.pkl # The final, serialized ML pipeline.
-│
-├── notebooks/
-│   ├── EDA.ipynb           # Exploratory Data Analysis and visualization.
-│   └── Modelling.ipynb     # Model experimentation and final pipeline creation.
-│
-├── src/
-│   └── train_model.py      # A clean script to train the model and save the pipeline.
-│
-├── .gitignore              # Specifies files for Git to ignore.
-├── README.md               # You are here!
-└── requirements.txt        # A list of all Python packages required to run the project.
+├── app/<br>
+│   └── app.py              # The Streamlit web application script. <br>
+│<br>
+├── data/<br>
+│   └── coffee_data.csv     # The raw dataset used for training (add your CSV here). <br>
+│<br>
+├── models/<br>
+│   └── coffee_price_predictor_pipeline.pkl # The final, serialized ML pipeline.<br>
+│<br>
+├── notebooks/<br>
+│   ├── EDA.ipynb           # Exploratory Data Analysis and visualization.<br>
+│   └── Modelling.ipynb     # Model experimentation and final pipeline creation.<br>
+│<br>
+├── src/<br>
+│   └── train_model.py      # A clean script to train the model and save the pipeline.<br>
+│<br>
+├── .gitignore              # Specifies files for Git to ignore.<br>
+├── README.md               # You are here!<br>
+└── requirements.txt        # A list of all Python packages required to run the project.<br>
 
 
 ---
@@ -58,6 +58,9 @@ Follow these steps to set up and run the project on your local machine.
 ```bash
 git clone [https://github.com/your-username/Coffee-Price-Predictor.git](https://github.com/your-username/Coffee-Price-Predictor.git)
 cd Coffee-Price-Predictor
+
+```
+```bash
 2. Create and Activate a Virtual Environment
 It's recommended to create a virtual environment to keep dependencies isolated.
 
@@ -68,33 +71,44 @@ PowerShell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 On macOS/Linux:
+```
 
-Bash
+```Bash
 
 python3 -m venv .venv
 source .venv/bin/activate
 3. Install Dependencies
 Install all the required packages from the requirements.txt file.
+```
 
-Bash
+```Bash
 
 pip install -r requirements.txt
+```
+
+```Bash
 4. Train the Model
 Before running the app, you need to train the model, which will create the .pkl file in the models/ directory.
+```
 
-Bash
+```Bash
 
 python src/train_model.py
 Note: Make sure your dataset is in the data/ folder and its name matches the one in the train_model.py script.
+```
 
+```Bash
 5. Run the Streamlit App
 Now you can launch the web application!
+```
 
-Bash
+```Bash
 
 streamlit run app/app.py
 Open your web browser and navigate to the local URL provided by Streamlit (usually http://localhost:8501).
+```
 
+```bash
 🎯 Model Performance
 Fill this in! Add the key metrics from your model evaluation here.
 
@@ -103,10 +117,13 @@ Model: RandomForestRegressor
 Mean Absolute Error (MAE): ₹XX.XX
 
 R-squared (R²): 0.XX
+```
 
+```bash
 🔮 Future Improvements
 Hyperparameter Tuning: Use GridSearchCV or RandomizedSearchCV to find the optimal model parameters.
 
 Get a Real Dataset: The current model is trained on a sample dataset. Using a larger, real-world dataset would improve performance and relevance.
 
 CI/CD Pipeline: Implement a simple CI/CD pipeline using GitHub Actions to automatically test and deploy the application.
+```
